@@ -23,5 +23,50 @@
     ></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="logo">TaskTide</h1>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebarDivs">
+          <h3 class="sidebarHeadings">All</h3>
+        </div>
+        <div class="sidebarDivs">
+          <h3 class="sidebarHeadings">Today</h3>
+        </div>
+        <div class="sidebarDivs">
+          <h3 class="sidebarHeadings">Week</h3>
+        </div>
+        <div class="sidebarDivs">
+          <h3 class="sidebarHeadings">Important</h3>
+        </div>
+      </div>
+      <div class="mainScreen">
+        <div class="mainScreenHeadingDiv">
+          <h1 class="mainScreenHeading">Today</h1>
+        </div>
+        <div class="addTaskDiv">
+          <div class="addTaskTrigger">
+            <i class="fa-solid fa-plus addTaskIcon" aria-hidden="true"></i>
+            <i>Add Task</i>
+          </div>  
+          <div class="addTaskForm">
+            <input type="text" name="inputTaskName" id="inputTaskName" placeholder="Task Name" >
+            <textarea name="inputTaskDetails" id="inputTaskDetails" placeholder="Task Details">
+            </textarea>
+            <div class="addTaskFormChildDiv">
+              <input type="date" name="inputTaskDate" id="inputTaskDate">
+              <input type="button" value="Add Task" id="addTaskButton">
+              <input type="button" value="Cancel" id="cancelTaskButton">
+            </div>
+            
+          </div>
+        </div>
+        <div class="TasksDiv">
+          <div class="task"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
