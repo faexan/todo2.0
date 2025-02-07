@@ -1,7 +1,5 @@
 body {
-  
 }
-
 
 * {
   padding: 0;
@@ -22,7 +20,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .container {
@@ -48,34 +45,36 @@ input {
 .mainScreenHeadingDiv {
   border-radius: 5px;
   background-color: tomato;
-  padding:30px;
+  padding: 30px;
   color: white;
   margin: 20px 0;
 }
 
 .mainScreenHeading {
- 
 }
 
-
-
 .addTaskTrigger {
-  height:60px;
+  height: 60px;
   padding: 20px;
   background-color: brown;
   border-radius: 5px;
   margin: 10px 0;
+  cursor: pointer;
 }
-
 
 .addTaskForm {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: none;
 }
 
 #inputTaskName {
   border-bottom: 1px solid black;
   padding: 5px;
+  width: 100%;
 }
 
 #inputTaskDetails {
@@ -91,4 +90,37 @@ input {
 #inputTaskDate {
   width: 100px;
   border: 1px solid black;
+}
+
+.addTaskFormChildDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  height: 40px;
+  align-items: center;
+}
+
+#addTaskButton,
+#cancelTaskButton {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.taskOptions {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
 }

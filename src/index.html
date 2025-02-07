@@ -50,21 +50,50 @@
           <div class="addTaskTrigger">
             <i class="fa-solid fa-plus addTaskIcon" aria-hidden="true"></i>
             <i>Add Task</i>
-          </div>  
+          </div>
           <div class="addTaskForm">
-            <input type="text" name="inputTaskName" id="inputTaskName" placeholder="Task Name" >
-            <textarea name="inputTaskDetails" id="inputTaskDetails" placeholder="Task Details">
-            </textarea>
+            <input
+              type="text"
+              name="inputTaskName"
+              id="inputTaskName"
+              placeholder="Task Name"
+            />
+            <textarea
+              name="inputTaskDetails"
+              id="inputTaskDetails"
+              placeholder="Task Details"
+            ></textarea>
             <div class="addTaskFormChildDiv">
-              <input type="date" name="inputTaskDate" id="inputTaskDate">
-              <input type="button" value="Add Task" id="addTaskButton">
-              <input type="button" value="Cancel" id="cancelTaskButton">
+              <input
+                type="date"
+                name="inputTaskDate"
+                value=" "
+                id="inputTaskDate"
+              />
+              <div>
+                <input type="button" value="Add Task" id="addTaskButton" />
+                <input type="button" value="Cancel" id="cancelTaskButton" />
+              </div>
             </div>
-            
           </div>
         </div>
         <div class="TasksDiv">
-          <div class="task"></div>
+          <div class="task">
+            <div class="taskDetails">
+              <h3 class="taskName">Task Name</h3>
+              <p class="taskDescription">Task Description</p>
+            </div>
+            <div class="taskOptions">
+              <i
+                class="fa-solid fa-pencil taskOptionIcon"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa-solid fa-trash taskOptionIcon"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
